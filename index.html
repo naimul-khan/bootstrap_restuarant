@@ -17,41 +17,48 @@
     <body>
         <header class="jumbotron"> 
             <div class="container"> 
-                <div>
-                    <div>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
                         <h1>Al Abbasid Restaurant and Cafe</h1>
                         <p>Al Abbasid brings world reknowned halal fine dining to New York City. </p>
                     </div> 
+                    <!-- The unspecified second attribute is just saying to fill the rest of the row with whatever content is contained within the below div-->
+                    <div class="col-12 col-sm">
+                        <!-- NEED CONTENT -->
+                    </div>
                 </div>
             </div>
         </header>
 
         <div class="container"> 
-            <div>
-                <div class="row">
+            <div class="row">
+                <!-- column 1-->
+                <div class="col-12 col-sm-4 col-md-3">
                     <h3>Our Menu</h3>
                 </div>
-                <div> 
+                
+                <!-- column 2 -->
+                <div class="col col-sm col-md"> <!-- is saying to fill in the rest of the columns from the specifications in the previous div -->
                     <h2>Lamb Burger</h2>
                     <p>Spicy Grade A ground lamb burger mixed with an array of seasoning, lettuce, onions, tomato, and pickles on a brioche bun. Served medium.</p>
                 </div>
             </div>
 
-            <div>
-                <div class="row">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3">
                     <h3>Chefs Specials</h3>
                 </div>
-                <div> 
+                <div class="col col-sm col-md"> 
                     <h2>Schezuan Beef and Vegatable</h2>
                     <p>Roasted to tenderness, our schezuan beef is served with an assortment of vegtables on a bed of rice.</p>
                 </div>
             </div>
 
-            <div>
-                <div class="row">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3">
                     <h3>Head Chef</h3>
                 </div>
-                <div> 
+                <div class="col col-sm col-md"> 
                     <h2>Naimul Khan</h2>
                     <p>Studied from the French Culianry Institute, Mr. Khan is a Michilen rated chef focued on cuisine from around the world</p>
                 </div>
@@ -61,7 +68,9 @@
         <footer>
             <div class="container"> 
                 <div class="row">
-                    <div> 
+                    <!-- Remember, these columns ADD up to 12 -->
+                    <!-- Column 1 -->
+                    <div class="col-4 col-sm-2"> 
                         <h5>Links</h5>
                         <ul> 
                             <li><a href="#">Home</a></li>
@@ -70,7 +79,9 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <div>
+
+                    <!-- Column 2 -->
+                    <div class="col-7 col-sm-5">
                         <h5>Our Address</h5>
                         <address>
                             121 Maujer St<br>
@@ -78,21 +89,25 @@
                             Tel: 212-555-4567<br>
                         </address>
                     </div>
-                    <div>
-                        <div> 
+                     <div class="col-12 col-sm-4"> 
                             <a href="www.google.com">Google+</a>
                             <a href="www.facebook.com">Facebook</a>
                             <a href="www.twitter.com">Twitter</a>
                             <a href="www.linkedin.com">LinkedIn</a>
                             <a href="www.youtube.com">YouTube</a>
-                        </div>
                     </div>
                 </div>
-                <div>
-                    <p>Copyright 2021</p>
+
+                <div class="row">
+                    <div class="col-auto">
+                        <p>Copyright 2021</p>
+                    </div>
                 </div>
             </div>
+
         </footer>
+
+        
         <!--BELOW ARE OUR SCRIPT TAGS-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
