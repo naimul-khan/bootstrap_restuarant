@@ -25,7 +25,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mr-auto" href="#"><img src="imgs/img/logo.png" hright="30" width="41"></a>
+                <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" hright="30" width="41"></a>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto"> 
                         <li class="nav-item "><a class="nav-link active" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -40,7 +40,7 @@
         <header class="jumbotron"> 
             <div class="container"> 
                 <div class="row row-header">
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-6 align-self-center">
                         <h1>Ristorante con Fusion</h1>
                         <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                     </div> 
@@ -48,9 +48,20 @@
 
                     <!-- Image Section -->
                     <!-- Remember to apply to other pages -->
-                    <div class="col-12 col-sm align-self-center">
-                        <img src="imgs/img/logo.png" class="img-fluid">
-                    </div>
+
+                    <!-- TASK 3-->
+                        <div class="col-12 col-sm-6 row row-header align-self-center">
+                            <div class="col-12 col-sm-6 align-self-center text-center mt-3">
+                                <img src="img/logo.png" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-sm-6 align-self-center text-center mt-5">
+                                <a href="#Reserve">
+                                    <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block">ReserveTable</button> 
+                                </a>
+                            </div>
+                        </div>
+            
+                   </div>
                 </div>
             </div>
         </header>
@@ -66,7 +77,7 @@
                 <div class="col col-sm order-sm-first col-md">
                     <div class="media">
                         <img class="d-flex mr-3 img-thumbnail align-self-center"
-                                src="imgs/img/uthappizza.png" alt="Uthappizza">
+                                src="img/uthappizza.png" alt="Uthappizza">
                         <div class="media-body">
                             <h2 class="media-heading mt-0">Uthappizza 
                                 <span class="badge badge-danger">HOT</span>
@@ -82,14 +93,22 @@
                 </div>
             </div>
 
-            <div class="row row-content align-items-center">
+            <div class="row row-content align-items-center btn-b">
+
+                <!-- TASK 2 -->
                 <div class="col-12 col-sm-4 col-md-3">
-                    <h3>Chefs Specials</h3>
+                    <h3>This Month's Promotions</h3>
                 </div>
                 <div class="col col-sm col-md"> 
-                    <h2>Schezuan Beef and Vegatable</h2>
-                    <p>Roasted to tenderness, our schezuan beef is served with an assortment of vegtables on a bed of rice.</p>
-                </div>
+                    <div class="media">
+                    <div class="media-body">
+                        <h2 class="media-header">Weekend Grand Buffet  <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.</p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                    </div>
+                    
+                </div> 
             </div>
 
             <div class="row row-content align-items-center">
@@ -99,7 +118,7 @@
                 <div class="col col-sm order-sm-first col-md"> 
                     <div class="media">
                         <img class="d-flex mr-3 img-thumbnail align-self-center"
-                                src="imgs/img/alberto.png" alt="Alberto Somayya">
+                                src="img/alberto.png" alt="Alberto Somayya">
                         <div class="media-body">
                             <h2 class="mt-0">Alberto Somayya</h2>
                             <h4>Executive Chef</h4>
@@ -111,6 +130,63 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- TASK 1 -->
+            <div class="row row-content align-items-center">
+                <div class="col-12 col-sm-8 offset-sm-2">
+                    <div class="card" id="Reserve">
+                        <h3 class="card-header bg-primary text-white">Reserve a Table</h3>
+                        <div class="card-body">
+                           <form>
+                               <dl class="form-group row">
+                                   <dt class="col-sm-4">
+                                       <label for="guests" class="col-form-label mr-3">Number of Guests</label>
+                                    </dt>
+                                   <dd class="col-sm-8 align-self-center">
+                                       <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="OneGuest" name="guests" value="1">
+                                            <label class="form-check-label mr-3" for="OneGuest">1</label>
+                                            <input class="form-check-input" type="radio" id="TwoGuest" name="guests" value="2">
+                                            <label class="form-check-label mr-3" for="OneGuest">2</label>
+                                            <input class="form-check-input" type="radio" id="ThreeGuest" name="guests" value="3">
+                                            <label class="form-check-label mr-3" for="OneGuest">3</label>
+                                            <input class="form-check-input" type="radio" id="FourGuest" name="guests" value="4">
+                                            <label class="form-check-label mr-3" for="OneGuest">4</label>
+                                            <input class="form-check-input" type="radio" id="FiveGuest" name="guests" value="5">
+                                            <label class="form-check-label mr-3" for="OneGuest">5</label>
+                                            <input class="form-check-input" type="radio" id="SixGuest" name="guests" value="6">
+                                            <label class="form-check-label mr-3" for="OneGuest">6</label>
+                                        </div>
+                                    </dd>
+
+                                   <dt class="col-12 col-sm-4 mt-4">
+                                        <label for="guests" class="col-form-label mr-3">Date and Time</label>
+                                   </dt>
+                                   <dd class="col-12 col-sm-8 mt-4 form-row align-self-center">
+                                       <div class="col-12 col-sm-6">
+                                        <input type="date" class="form-control" id="Date" name="date" placeholder="Date">
+                                       </div>
+                                       <div class="col-12 col-sm-6">
+                                        <input type="time" class="form-control" id="Time" name="time" placeholder="Time">
+                                       </div>
+                                   </dd>
+
+                                   <dt class="col-sm-4 mt-4">
+                                       <!-- BLANK -->
+                                   </dt>
+                                   <dd class="mt-4">
+                                    <div class="form-group row">
+                                        <div class="col-8 offset-2">
+                                            <button type="submit" class="btn btn-primary">Reserve</button>
+                                        </div>
+                                    </div> 
+                                   </dd>
+                               </dl>
+                           </form>
+                      </div>
+                    </div>
+                </div> 
             </div>
         </div>
 
