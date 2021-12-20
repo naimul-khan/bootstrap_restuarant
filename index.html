@@ -25,7 +25,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+                <a class="navbar-brand mr-auto" href="#"><img src="imgs/img/logo.png" hright="30" width="41"></a>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto"> 
                         <li class="nav-item "><a class="nav-link active" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -45,8 +45,11 @@
                         <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                     </div> 
                     <!-- The unspecified second attribute is just saying to fill the rest of the row with whatever content is contained within the below div-->
-                    <div class="col col-sm">
-                        <!-- NEED CONTENT -->
+
+                    <!-- Image Section -->
+                    <!-- Remember to apply to other pages -->
+                    <div class="col-12 col-sm align-self-center">
+                        <img src="imgs/img/logo.png" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -58,11 +61,24 @@
                 <div class="col-12 col-sm-4 order-sm-last col-md-3">
                     <h3>Our Curated and Organic Menu</h3>
                 </div>
-                
                 <!-- column 2 -->
-                <div class="col col-sm order-sm-first col-md"> <!-- is saying to fill in the rest of the columns from the specifications in the previous div -->
-                    <h2>Lamb Burger</h2>
-                    <p>Spicy Grade A ground lamb burger mixed with an array of seasoning, lettuce, onions, tomato, and pickles on a brioche bun. Served medium.</p>
+                <!-- Image Cont'd-->
+                <div class="col col-sm order-sm-first col-md">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center"
+                                src="imgs/img/uthappizza.png" alt="Uthappizza">
+                        <div class="media-body">
+                            <h2 class="media-heading mt-0">Uthappizza 
+                                <span class="badge badge-danger">HOT</span>
+                                <span class="badge badge-pill badge-secondary">$4.99</span>
+                            </h2>
+                            <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                                Italian pizza, topped with Cerignola olives, ripe vine
+                                cherry tomatoes, Vidalia onion, Guntur chillies and
+                                Buffalo Paneer.</p>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
 
@@ -81,9 +97,19 @@
                     <h3>Meet Our Chefs Team</h3>
                 </div>
                 <div class="col col-sm order-sm-first col-md"> 
-                    <h2>Naimul Khan</h2>
-                    <h4>Executive Chef</h4>
-                    <p>Studied from the French Culianry Institute, Mr. Khan is a Michilen rated chef focued on cuisine from around the world</p>
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center"
+                                src="imgs/img/alberto.png" alt="Alberto Somayya">
+                        <div class="media-body">
+                            <h2 class="mt-0">Alberto Somayya</h2>
+                            <h4>Executive Chef</h4>
+                            <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                                International experience having worked closely with
+                                whos-who in the culinary world, he specializes in
+                                creating mouthwatering Indo-Italian fusion experiences.
+                                </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
